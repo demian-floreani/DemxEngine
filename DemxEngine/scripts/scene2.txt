@@ -1,0 +1,103 @@
+texture {
+	name: metal,
+	path: data\textures\metal.jpg
+}
+
+texture {
+	name: marble,
+	path: data\textures\marble.jpg
+}
+
+texture {
+	name: grass,
+	path: data\textures\grass.jpg
+}
+
+texture {
+	name: dry,
+	path: data\textures\dry.jpg
+}
+
+texture {
+	name: water,
+	path: data\textures\water.jpg
+}
+
+texture {
+	name: sandgrass,
+	path: data\textures\sandgrass.jpg
+}
+
+texture {
+	name: particle,
+	path: data\textures\particle.bmp
+}
+
+#texture {
+#	name: us_flag,
+#	path: data\textures\us_flag.jpg
+#}
+
+material {
+	name: metallic,
+	texturing: [metal],
+	phong_exp: 360,
+	specular_color: (0.8, 0.8, 0.8)
+}
+
+material {
+	name: marble_mat,
+	texturing: [marble],
+	phong_exp: 350,
+	specular_color: (0.5, 0.5, 0.5)
+}
+
+material {
+	name: flag_mat,
+	texturing: [us_flag],
+}
+
+material {
+	name: ground,
+	texturing: [grass, dry]
+}
+
+material {
+	name: particle,
+	texturing: [particle]
+}
+
+#particle_system {
+#	name: ps,
+#	size: 250,
+#	position: (0, 1, 0),
+#	vector: (0, 1, 0),
+#	transition: [(1.0, 0.0, 0.0), (1.0, 1.0, 0.0)],
+#	material: particle,
+#	modifier: 0.3
+#}
+
+#model {
+#	name: statue,
+#	path: data\models\statue\statue.obj
+#}
+
+#entity {
+#	name: statue1,
+#	model: statue
+#}
+
+#entity {
+#	name: test,
+#	vertices: [ (-20, 0, -20), (-20, 0, 20), (20, 0, -20), 
+#	            (20, 0, -20), (-20, 0, 20), (20, 0, 20) ],
+#				
+#	mappings: [ (0, 20), (0, 0), (20, 20), 
+#				(20, 20), (0, 0), (20, 0) ],
+#				
+#	material: ground
+#}
+
+
+
+

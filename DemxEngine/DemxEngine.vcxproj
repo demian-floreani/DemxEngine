@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{53F2F1DC-88A7-4B8F-ADAC-0C383283E6E3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>opengl_test1</RootNamespace>
+    <ProjectName>DemxEngine</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\Debug\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\Release\</OutDir>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)\DemxEngine\External\;$(SolutionDir)\DemxEngine\External\FreeImage\Dist;$(SolutionDir)\DemxEngine\External\Assimp\include;$(SolutionDir)\DemxEngine\External\soil\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glew32.lib;FreeImage.lib;assimp.lib;SOIL.lib;Shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\DemxEngine\External\FreeImage\Dist\x32;$(SolutionDir)\DemxEngine\External\Assimp\lib\x86;$(SolutionDir)\DemxEngine\External\glew\lib;$(SolutionDir)\DemxEngine\External\soil\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)\DemxEngine\External\;$(SolutionDir)\DemxEngine\External\Assimp\include;$(SolutionDir)\DemxEngine\External\soil\lib;$(SolutionDir)\DemxEngine\External\FreeImage\Dist;$(SolutionDir)\DemxEngine\External\lua5.1\include</AdditionalIncludeDirectories>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)\DemxEngine\External\FreeImage\Dist\x32;$(SolutionDir)\DemxEngine\External\Assimp\lib\x86;$(SolutionDir)\DemxEngine\External\glew\lib;$(SolutionDir)\DemxEngine\External\soil\lib;$(SolutionDir)\DemxEngine\External\lua5.1\lib\dll;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glew32.lib;FreeImage.lib;assimp.lib;SOIL.lib;Shlwapi.lib;lua5.1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AABB.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="Frustum.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="GLModel.h" />
+    <ClInclude Include="Interpreter.h" />
+    <ClInclude Include="Lights.h" />
+    <ClInclude Include="LuaManager.h" />
+    <ClInclude Include="MainScene.h" />
+    <ClInclude Include="RenderQueue.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="Material.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="ModelLoader.h" />
+    <ClInclude Include="ModelManager.h" />
+    <ClInclude Include="OrthoShadow.h" />
+    <ClInclude Include="Parser.h" />
+    <ClInclude Include="ParticleScene.h" />
+    <ClInclude Include="ParticleSystem.h" />
+    <ClInclude Include="Plane.h" />
+    <ClInclude Include="ProjectionCubeShadow.h" />
+    <ClInclude Include="ProjectionShadow.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="Scene2.h" />
+    <ClInclude Include="ShaderManager.h" />
+    <ClInclude Include="Shadow.h" />
+    <ClInclude Include="SkyBox.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Terrain.h" />
+    <ClInclude Include="TestScene.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="Token.h" />
+    <ClInclude Include="WaveSimultation.h" />
+    <ClInclude Include="Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AABB.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Draw.cpp" />
+    <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="Frustum.cpp" />
+    <ClCompile Include="GLCircle.cpp" />
+    <ClCompile Include="GLCone.cpp" />
+    <ClCompile Include="GLCube.cpp" />
+    <ClCompile Include="GLCylinder.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="GLModel.cpp" />
+    <ClCompile Include="GLPlane.cpp" />
+    <ClCompile Include="GLSphere.cpp" />
+    <ClCompile Include="Init.cpp" />
+    <ClCompile Include="Interpreter.cpp" />
+    <ClCompile Include="Lights.cpp" />
+    <ClCompile Include="LuaManager.cpp" />
+    <ClCompile Include="MainScene.cpp" />
+    <ClCompile Include="RenderQueue.cpp" />
+    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="Material.cpp" />
+    <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="ModelLoader.cpp" />
+    <ClCompile Include="ModelManager.cpp" />
+    <ClCompile Include="OrthoShadow.cpp" />
+    <ClCompile Include="Parser.cpp" />
+    <ClCompile Include="ParticleScene.cpp" />
+    <ClCompile Include="GLPyramid.cpp" />
+    <ClCompile Include="Plane.cpp" />
+    <ClCompile Include="ProjectionCubeShadow.cpp" />
+    <ClCompile Include="ProjectionShadow.cpp" />
+    <ClCompile Include="ShaderManager.cpp" />
+    <ClCompile Include="System.cpp" />
+    <ClCompile Include="TestScene.cpp" />
+    <ClCompile Include="Token.cpp" />
+    <ClCompile Include="Update.cpp" />
+    <ClCompile Include="Win32.cpp" />
+    <ClCompile Include="ParticleSystem.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="Scene2.cpp" />
+    <ClCompile Include="Shadow.cpp" />
+    <ClCompile Include="SkyBox.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Terrain.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="WaveSimultation.cpp" />
+    <ClCompile Include="Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="todo.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="entity.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Win32.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="MainScene.cpp">
+      <Filter>Scenes\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene2.cpp">
+      <Filter>Scenes\Scene2</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleScene.cpp">
+      <Filter>Scenes\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleSystem.cpp">
+      <Filter>Core\ParticleSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Lights.cpp">
+      <Filter>Core\Lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain.cpp">
+      <Filter>Core\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Material.cpp">
+      <Filter>Core\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Core\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="SkyBox.cpp">
+      <Filter>Core\Sky Box</Filter>
+    </ClCompile>
+    <ClCompile Include="Shadow.cpp">
+      <Filter>Core\Shadows</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderManager.cpp">
+      <Filter>Core\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser.cpp">
+      <Filter>Core\Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="Token.cpp">
+      <Filter>Core\Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="Interpreter.cpp">
+      <Filter>Core\Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelLoader.cpp">
+      <Filter>Core\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelManager.cpp">
+      <Filter>Core\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>Core\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="GLModel.cpp">
+      <Filter>Core\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="GLCube.cpp">
+      <Filter>Core\Entity\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="GLPlane.cpp">
+      <Filter>Core\Entity\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="GLPyramid.cpp">
+      <Filter>Core\Entity\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="GLCircle.cpp">
+      <Filter>Core\Entity\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="GLCylinder.cpp">
+      <Filter>Core\Entity\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="GLCone.cpp">
+      <Filter>Core\Entity\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="GLSphere.cpp">
+      <Filter>Core\Entity\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="OrthoShadow.cpp">
+      <Filter>Core\Shadows</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectionShadow.cpp">
+      <Filter>Core\Shadows</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Core\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Init.cpp">
+      <Filter>Core\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw.cpp">
+      <Filter>Core\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectionCubeShadow.cpp">
+      <Filter>Core\Shadows</Filter>
+    </ClCompile>
+    <ClCompile Include="AABB.cpp">
+      <Filter>Core\Frustum</Filter>
+    </ClCompile>
+    <ClCompile Include="Frustum.cpp">
+      <Filter>Core\Frustum</Filter>
+    </ClCompile>
+    <ClCompile Include="Plane.cpp">
+      <Filter>Core\Frustum</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Core\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaManager.cpp">
+      <Filter>Core\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="WaveSimultation.cpp">
+      <Filter>Core\WaveSimulation</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Core\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderQueue.cpp">
+      <Filter>Core\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Update.cpp">
+      <Filter>Core\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScene.cpp">
+      <Filter>Scenes\TestScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="System.cpp">
+      <Filter>Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Core\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Core\Entity</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="MainScene.h">
+      <Filter>Scenes\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene2.h">
+      <Filter>Scenes\Scene2</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleScene.h">
+      <Filter>Scenes\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleSystem.h">
+      <Filter>Core\ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Lights.h">
+      <Filter>Core\Lighting</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain.h">
+      <Filter>Core\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>Core\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Core\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="SkyBox.h">
+      <Filter>Core\Sky Box</Filter>
+    </ClInclude>
+    <ClInclude Include="Shadow.h">
+      <Filter>Core\Shadows</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderManager.h">
+      <Filter>Core\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser.h">
+      <Filter>Core\Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="Token.h">
+      <Filter>Core\Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="Interpreter.h">
+      <Filter>Core\Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelLoader.h">
+      <Filter>Core\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelManager.h">
+      <Filter>Core\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Core\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="GLModel.h">
+      <Filter>Core\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="OrthoShadow.h">
+      <Filter>Core\Shadows</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectionShadow.h">
+      <Filter>Core\Shadows</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Core\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectionCubeShadow.h">
+      <Filter>Core\Shadows</Filter>
+    </ClInclude>
+    <ClInclude Include="AABB.h">
+      <Filter>Core\Frustum</Filter>
+    </ClInclude>
+    <ClInclude Include="Frustum.h">
+      <Filter>Core\Frustum</Filter>
+    </ClInclude>
+    <ClInclude Include="Plane.h">
+      <Filter>Core\Frustum</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Core\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaManager.h">
+      <Filter>Core\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="WaveSimultation.h">
+      <Filter>Core\WaveSimulation</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Core\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderQueue.h">
+      <Filter>Core\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="TestScene.h">
+      <Filter>Scenes\TestScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Window.h">
+      <Filter>Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Core\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Core\Entity</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header">
+      <UniqueIdentifier>{6347508d-9520-42bc-afb9-cddf5c34266e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{b4f74a15-217e-4835-84f9-1f30fb947377}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes">
+      <UniqueIdentifier>{005c4d2d-786a-4d37-b23a-fff77e7368be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes\Scene2">
+      <UniqueIdentifier>{a498d90b-b9ff-4463-8441-482e3dcb9da5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes\Particles">
+      <UniqueIdentifier>{41022d01-bab7-48ba-9657-f6a28fad9e5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes\Test">
+      <UniqueIdentifier>{8e2ff779-14b0-4de4-9e18-72624d2123e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{a2f732d6-ac56-436a-a6da-008c4e67e21b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\ParticleSystem">
+      <UniqueIdentifier>{d7d9fd2c-01d3-4bb0-a1f7-fb2a44a3cfad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Lighting">
+      <UniqueIdentifier>{02b5ca9c-00f3-455c-a793-212c5758dd31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Texturing">
+      <UniqueIdentifier>{bef56ce7-882c-4536-8e9c-7b9ffedd16b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Terrain">
+      <UniqueIdentifier>{5077f0a6-7fdc-4fa1-b829-d5e1a08dd639}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\WaveSimulation">
+      <UniqueIdentifier>{7525ac92-a2f3-4a06-a94a-79cd1d9760e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Materials">
+      <UniqueIdentifier>{48819bde-5374-4b31-b4eb-878ce5835a06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Camera">
+      <UniqueIdentifier>{6685cf69-fa69-4cd5-a40b-accd938ccc5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Models">
+      <UniqueIdentifier>{d0631a73-3cae-4c0c-b4a4-a2aa2abfd040}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Shaders">
+      <UniqueIdentifier>{1f52238d-651e-4f09-a998-dfc1621d80e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Sky Box">
+      <UniqueIdentifier>{779128bb-7849-4af7-a37d-91d3d76675e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Shadows">
+      <UniqueIdentifier>{5983d329-69fa-4259-bb95-dba049aa1d16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Scripting">
+      <UniqueIdentifier>{29fb10f2-4400-4495-bc78-6e0d7efff895}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{e1e56382-75b3-4367-ab3f-b6a9d9feca64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Renderer">
+      <UniqueIdentifier>{cad0ef3d-e340-4ca5-8bb9-950906966cca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Scene">
+      <UniqueIdentifier>{b6b1f267-9f9b-44f4-831a-bbf6f502a8d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Lua">
+      <UniqueIdentifier>{8c9b6bc3-c26e-41fc-afca-0829feb55dd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Frustum">
+      <UniqueIdentifier>{203885d1-df10-4e30-ae01-7d1fe0e1415c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes\TestScene">
+      <UniqueIdentifier>{2e0b23d2-2c31-4c8f-b4b2-9f83f586fc81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Engine">
+      <UniqueIdentifier>{420aaa0e-fa43-4b6f-9887-282c6ea5ffc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Entity">
+      <UniqueIdentifier>{ea51b391-38a4-4910-a909-824e3ac14387}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Entity\Shapes">
+      <UniqueIdentifier>{333b8429-36ac-4ad1-b220-1e02ae5faa18}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="todo.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="entity.cd" />
+  </ItemGroup>
+</Project>

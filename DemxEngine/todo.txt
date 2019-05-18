@@ -1,0 +1,7 @@
+@todo
+
+- change waves to use materials
+- delete vaos and vbos
+- material and texture manager
+
+std::cout << "debug " << gluErrorString( glGetError() ) << std::endl;

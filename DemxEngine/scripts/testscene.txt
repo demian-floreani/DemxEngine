@@ -1,0 +1,90 @@
+texture {
+	name: metal,
+	path: data\textures\metal.jpg
+}
+
+texture {
+	name: marble,
+	path: data\textures\marble.jpg
+}
+
+texture {
+	name: grass,
+	path: data\textures\grass.jpg
+}
+
+texture {
+	name: water,
+	path: data\textures\water.jpg
+}
+
+material {
+	name: metallic,
+	texturing: [metal],
+	phongExp: 360,
+	specularColor: (0.8, 0.8, 0.8)
+}
+
+material {
+	name: metallic,
+	texturing: [metal],
+	phongExp: 360,
+	specularColor: (0.8, 0.8, 0.8)
+}
+
+material {
+	name: marble_mat,
+	texturing: [marble],
+	phongExp: 350,
+	specularColor: (0.5, 0.5, 0.5)
+}
+
+material {
+	name: ground,
+	texturing: [grass]
+}
+
+material {
+	name: water_mat,
+	texturing: [water],
+	transparency: 0.7
+}
+
+terrain {
+	name: terrain1,
+	path: data\terrains\large_terrain.hm,
+	material: ground
+}
+
+wave {
+	name: watersim,
+	material: water_mat,
+	size: 50
+}
+
+translate {
+	name: watersim,
+	vector: (-25, 1, 0)
+}
+
+#spot_light {
+#	name: light1,
+#	color: (1.0, 1.0, 1.0),
+#	direction: (-10.0, -10.0, -10.0)
+#}
+
+directional_light {
+	name: light1,
+	color: (1.0, 1.0, 1.0),
+	direction: (-10.0, -10.0, -10.0)
+}
+
+#point_light {
+#	name: light1,
+#	color: (1.0, 1.0, 1.0),
+#	position: (0, 2, 0),
+#	shadow: true
+#}
+
+
+

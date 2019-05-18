@@ -1,0 +1,280 @@
+##### textures #####
+
+texture {
+	name: grass,
+	path: data\textures\grass.jpg
+}
+
+texture {
+	name: dry,
+	path: data\textures\dry.jpg
+}
+
+texture {
+	name: water,
+	path: data\textures\water.jpg
+}
+
+texture {
+	name: particle,
+	path: data\textures\particle.bmp
+}
+
+texture {
+	name: smoke,
+	path: data\textures\smoke.jpg
+}
+
+##### materials #####
+
+material {
+	name: ground,
+	texturing: [grass, dry]
+}
+
+material {
+	name: water_mat,
+	texturing: water,
+	transparency: 0.7
+}
+
+material {
+	name: fire_mat,
+	texturing: particle
+}
+
+material {
+	name: smoke_mat,
+	texturing: smoke
+}
+
+##### models #####
+
+model {
+	name: oildrum,
+	path: data\models\oildrum\oildrum.obj
+}
+
+model {
+	name: streetlamp,
+	path: data\models\streetlamp\Models\streetlamp.obj
+}
+
+model {
+	name: statue,
+	path: data\models\statue\statue.obj
+}
+
+model {
+	name: bridge,
+	path: data\models\bridge\bridge.obj
+}
+
+model {
+	name: oak1,
+	path: data\models\trees\oak1.MD3
+}
+
+##### lighting #####
+
+ambient_light {
+	color: (0.15, 0.15, 0.15)
+}
+
+directional_light {
+	name: dl1,
+	color: (1.0, 1.0, 1.0),
+	direction: (0, 0, 0),
+	shadow: true
+}
+
+point_light {
+	name: pl1,
+	color: (0.7, 0.7, 0.7),
+	position: (0, 6.2, 7.5)
+}
+
+point_light {
+	name: pl2,
+	color: (0.7, 0.7, 0.7),
+	position: (-4, 6.2, -9)
+}
+
+##### terrains #####
+
+terrain {
+	name: terrain1,
+	path: data\terrains\large_terrain.hm,
+	material: ground
+}
+
+##### wave simulations #####
+
+wave {
+	name: watersim,
+	material: water_mat,
+	size: 30,
+	cast_shadow: false
+}
+
+translate {
+	name: watersim,
+	vector: (-15.0, 1.75, 0)
+}
+
+##### particle system #####
+
+particle_system {
+	name: fire,
+	size: 250,
+	position: (-5, 5.3, 10),
+	vector: (0, 1, 0),
+	transition: [(1.0, 0.0, 0.0), (1.0, 1.0, 0.0)],
+	material: fire_mat,
+	modifier: 0.3,
+	speed: 1.5
+}
+
+particle_system {
+	name: smoke,
+	size: 20,
+	position: (-5, 7.8, 10),
+	vector: (0, 1, 0),
+	color: (0.225, 0.19, 0.11),
+	material: smoke_mat,
+	modifier: 0.25,
+	speed: 0.25,
+	fade_in: 2000
+}
+
+##### entities #####
+
+entity {
+	name: statue1,
+	model: statue
+}
+
+translate {
+	name: statue1,
+	vector: (0, 4, -13)
+}
+
+rotate {
+	name: statue1,
+	modifier: -45,
+	vector: (0, 1, 0)
+}
+
+entity {
+	name: oildrum1,
+	model: oildrum
+}
+
+translate {
+	name: oildrum1,
+	vector: (-5, 4.3, 10)
+}
+
+entity {
+	name: streetlamp1,
+	model: streetlamp
+}
+
+entity {
+	name: streetlamp2,
+	model: streetlamp
+}
+
+translate {
+	name: streetlamp1,
+	vector: (0, 4, 7.5)
+}
+
+translate {
+	name: streetlamp2,
+	vector: (-4, 4, -9)
+}
+
+scale {
+	name: [streetlamp1, streetlamp2],
+	modifier: 0.25
+}
+
+entity {
+	name: bridge1,
+	model: bridge
+}
+
+translate {
+	name: bridge1,
+	vector: (0, 2.4, -3)
+}
+
+scale {
+	name: bridge1,
+	modifier: 0.045
+}
+
+entity {
+	name: oak1_1,
+	model: oak1
+}
+
+entity {
+	name: oak1_2,
+	model: oak1
+}
+
+entity {
+	name: oak1_3,
+	model: oak1
+}
+
+entity {
+	name: oak1_4,
+	model: oak1
+}
+
+translate {
+	name: oak1_1,
+	vector: (-5, 4.1, 14)
+}
+
+translate {
+	name: oak1_2,
+	vector: (-6, 4.1, 8)
+}
+
+translate {
+	name: oak1_3,
+	vector: (-4, 4, -13)
+}
+
+translate {
+	name: oak1_4,
+	vector: (2, 4, -12)
+}
+
+scale {
+	name: [oak1_1, oak1_2, oak1_3, oak1_4],
+	modifier: 0.0075
+}
+
+rotate {
+	name: [oak1_1, oak1_2, oak1_3, oak1_4],
+	modifier: 90,
+	vector: (0, 1, 0),
+}
+
+rotate {
+	name: [oak1_1, oak1_2, oak1_3, oak1_4],
+	modifier: -90,
+	vector: (1, 0, 0),
+}
+
+
+
+
+
+
+
